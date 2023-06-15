@@ -1,2 +1,2 @@
 # html-portfolio
-HTML Portfolio
+[HTML Portfolio](https://johnjaynesismanalo.github.io/html-portfolio/)
