@@ -1,52 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <style>
         body {
-            font-family: 'Lato', sans-serif;
-            background-color: #355070;
-            color: #0D1321;
+            font-family: 'Montserrat', sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #355070;
+            color: #0D1321;
         }
 
-        .container {
-            display: grid;
-            grid-template-columns: 1fr;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+        header {
+            background-color: #6D597A;
+            color: #0D1321;
+            padding: 20px;
             text-align: center;
         }
 
         h1 {
-            color: #E56B6F;
+            margin: 0;
+            padding: 0;
             font-size: 36px;
+            font-family: 'Playfair Display', serif;
         }
 
-        p {
-            font-size: 18px;
-            line-height: 1.6;
-            margin: 20px;
+        h4 {
+            font-family: 'Montserrat', sans-serif;
         }
 
-        a {
-            color: #E56B6F;
+        .container {
+            max-width: 800px;
+            margin: 300px auto; /* Adjusted margin for better centering */
+            padding: 20px;
+            background-color: #B56576;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #6D597A;
+            color: #0D1321;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Responsive Images */
+        .header-image,
+        .footer-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Navigation Menu Styles */
+        nav {
+            text-align: center;
+            background-color: #6D597A;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #0D1321;
             text-decoration: none;
+            margin: 0 10px;
+        }
+
+        /* Contact Information Styles */
+        .contact-info {
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        /* Grid-Based Layout Styles */
+        .quote-grid {
+            display: grid;
+            grid-template-columns: 1fr; /* Adjusted to single column for better readability */
+            grid-gap: 20px;
+        }
+
+        /* Box for Each Quote */
+        .quote-box {
+            background-color: #E56B6F;
+            padding: 20px;
+            border-radius: 10px; /* Adjusted border-radius */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Style for Text Inside Quote Box */
+        .quote-text {
+            font-size: 16px;
+            color: #0D1321;
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        @media (max-width: 1000px) {
+            h1 {
+                font-size: 28px;
+            }
+
+            .container {
+                padding: 10px;
+            }
         }
     </style>
-    <!-- Include the Lato font -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <!-- Include Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&amp;display=swap">
 </head>
 <body>
     <div class="container">
-        <h1>About Me</h1>
-        <p>My Full Name is John Jaynesis Villavecencio Manalo, currently 21 years old. I was born on 14th of October, Year 2001.</p>
-
-        <p>My hobbies are reading light novels, watching videos on some social platforms, and playing online games. My dream is to be a successful programmer and writer. My goal is to create my own RPG game.</p>
-        <a href="../index.html">Back to Home</a>
+        <!-- Separate Boxes for Each Quote -->
+        <div class="quote-grid">
+            <div class="quote-box">
+                <p class="quote-text">My Full Name is John Jaynesis Villavecencio Manalo, currently 21 years old. I was born on 14th of October, Year 2001.</p>
+                <p class="quote-text">My hobbies are reading light novels, watching videos on some social platforms, and playing online games. My dream is to be a successful programmer and writer.</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
