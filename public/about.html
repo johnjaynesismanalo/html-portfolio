@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>About Me</title>
+    <title>About</title>
     <style>
         body {
             font-family: 'Lato', sans-serif;
@@ -12,10 +12,17 @@
             padding: 0;
         }
 
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
         h1 {
             color: #E56B6F;
-            text-align: center;
-            padding: 20px;
             font-size: 36px;
         }
 
@@ -24,15 +31,22 @@
             line-height: 1.6;
             margin: 20px;
         }
+
+        a {
+            color: #E56B6F;
+            text-decoration: none;
+        }
     </style>
     <!-- Include the Lato font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 </head>
 <body>
-    <h1>About Me</h1>
-    <p>My Full Name is John Jaynesis Villavecencio Manalo, currently 21 years old. I was born on 14th of October, Year 2001.</p>
+    <div class="container">
+        <h1>About Me</h1>
+        <p>My Full Name is John Jaynesis Villavecencio Manalo, currently 21 years old. I was born on 14th of October, Year 2001.</p>
 
-    <p>My hobbies are reading light novels, watching videos on some social platforms, and playing online games. My dream is to be a successful programmer and writer.</p>
-    <a href="../index.html">Back to Home</a>
+        <p>My hobbies are reading light novels, watching videos on some social platforms, and playing online games. My dream is to be a successful programmer and writer. My goal is to create my own RPG game.</p>
+        <a href="../index.html">Back to Home</a>
+    </div>
 </body>
 </html>
